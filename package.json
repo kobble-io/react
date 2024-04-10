@@ -1,6 +1,15 @@
 {
   "name": "@kobbleio/react",
   "description": "Add authentication and monetization to your React application in minutes using Kobble",
+  "author": "Kevin Piacentini <kevin@kobble.io>",
+  "license": "MIT",
+  "repository": "https://github.com/kobble-io/react",
+  "keywords": [
+    "kobble",
+    "react",
+    "authentication",
+    "auth"
+  ],
   "private": false,
   "version": "1.0.0",
   "type": "module",
