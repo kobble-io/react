@@ -8,6 +8,9 @@ export * from './components/LoginButton';
 export * from './components/LogoutButton';
 export * from './components/SignedIn';
 export * from './components/SignedOut';
+export * from './components/ProfileLink';
+export * from './components/PricingLink';
+export * from './components/PortalLink';
 
 export * from './context/kobble/KobbleProvider';
 export * from './context/auth/AuthProvider';

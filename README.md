@@ -72,6 +72,9 @@ The package provides various utility components to help you manage the user's au
 - `<LoginButton />`: A button that triggers the login flow. I can be customized by passing a child prop.
 - `<LogoutButton />`: A button that triggers the logout flow. I can be customized by passing a child prop.
 - `<HandleCallback />`: A component that handles the authentication callback for the PKCE flow.
+- `<PortalLink />`: A link that redirects to your Customer Portal.
+- `<PricingLink />`: A link that redirects to your Pricing Page.
+- `<ProfileLink />`: A link that redirects to the user's profile page.
 
 ### Utility Hooks
 
