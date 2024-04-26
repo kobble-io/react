@@ -11,6 +11,8 @@ export * from './components/SignedOut';
 export * from './components/ProfileLink';
 export * from './components/PricingLink';
 export * from './components/PortalLink';
+export * from './components/IsAllowed';
+export * from './components/IsForbidden.tsx';
 
 export * from './context/kobble/KobbleProvider';
 export * from './context/auth/AuthProvider';
