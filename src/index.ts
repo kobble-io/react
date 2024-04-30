@@ -2,6 +2,7 @@ export * from './hooks/useAuth';
 export * from './hooks/useAuthStateChanged';
 export * from './hooks/useHandleRedirect';
 export * from './hooks/useKobble';
+export * from './hooks/useAccessControl';
 
 export * from './components/HandleCallback';
 export * from './components/LoginButton';
