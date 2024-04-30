@@ -25,7 +25,7 @@ export const AccessControlProvider: React.FC<{ children: React.ReactNode }> = ({
 		[permissions]
 	);
 
-	const hasQuota = useCallback(
+	const hasRemainingQuota = useCallback(
 		(quotaNames: string[] | string) => {
 			const names = Array.isArray(quotaNames) ? quotaNames : [quotaNames];
 
@@ -56,7 +56,7 @@ export const AccessControlProvider: React.FC<{ children: React.ReactNode }> = ({
 					permissions,
 					quotas,
 					hasPermission,
-					hasQuota,
+					hasRemainingQuota,
 					isLoading,
 					error: null
 				}

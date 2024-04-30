@@ -14,13 +14,13 @@ export const IsAllowed: FC<
 > = ({ children, quotas, permissions }) => {
 	useAssertWrappedByKobbleProvider(COMPONENT_NAME);
 
-	const { hasPermission, hasQuota, isLoading } = useAccessControl();
+	const { hasPermission, hasRemainingQuota, isLoading } = useAccessControl();
 
 	if (isLoading) {
 		return null;
 	}
 
-	if (quotas && !hasQuota(quotas)) {
+	if (quotas && !hasRemainingQuota(quotas)) {
 		return null;
 	}
 
