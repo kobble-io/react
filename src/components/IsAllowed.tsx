@@ -8,10 +8,10 @@ type PropsWithChildren<P> = P & { children?: React.ReactNode };
 
 export const IsAllowed: FC<
 	PropsWithChildren<{
-		permissions?: string[];
-		quotas?: string[];
+		permission?: string[] | string;
+		quota?: string[] | string;
 	}>
-> = ({ children, quotas, permissions }) => {
+> = ({ children, quota, permission }) => {
 	useAssertWrappedByKobbleProvider(COMPONENT_NAME);
 
 	const { hasPermission, hasRemainingQuota, isLoading } = useAccessControl();
@@ -20,11 +20,11 @@ export const IsAllowed: FC<
 		return null;
 	}
 
-	if (quotas && !hasRemainingQuota(quotas)) {
+	if (quota && !hasRemainingQuota(quota)) {
 		return null;
 	}
 
-	if (permissions && !hasPermission(permissions)) {
+	if (permission && !hasPermission(permission)) {
 		return null;
 	}
 
