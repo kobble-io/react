@@ -1,4 +1,4 @@
-import { KobbleClient } from '@kobbleio/auth-spa-js';
+import { KobbleClient } from '@kobbleio/javascript';
 import { useKobbleContext } from '../context/kobble/KobbleContext.tsx';
 
 export type UseKobbleReturn = {

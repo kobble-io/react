@@ -1,5 +1,5 @@
 import { createContextAndHook } from '../../shared/createContextAndHook.ts';
-import { Permission, Quota } from '@kobbleio/auth-spa-js';
+import { Permission, Quota } from '@kobbleio/javascript';
 
 export type AccessControlState = {
 	permissions: Permission[];

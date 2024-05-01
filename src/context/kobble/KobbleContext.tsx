@@ -1,5 +1,5 @@
-import { createContextAndHook } from "../../shared/createContextAndHook.ts";
-import { KobbleClient } from "@kobbleio/auth-spa-js";
+import { createContextAndHook } from '../../shared/createContextAndHook.ts';
+import { KobbleClient } from '@kobbleio/javascript';
 
 export type KobbleContextState = {
 	client: KobbleClient | null | undefined;
@@ -7,5 +7,4 @@ export type KobbleContextState = {
 	error: Error | null | undefined;
 };
 
-export const [KobbleContext, useKobbleContext] =
-	createContextAndHook<KobbleContextState>("KobbleContext");
+export const [KobbleContext, useKobbleContext] = createContextAndHook<KobbleContextState>('KobbleContext');

@@ -1,4 +1,4 @@
-import { AuthStateChangedCallback } from '@kobbleio/auth-spa-js';
+import { AuthStateChangedCallback } from '@kobbleio/javascript';
 import { useKobbleContext } from '../context/kobble/KobbleContext.tsx';
 
 export type UseAuthStateChangedReturn = { unsubscribe: () => void };

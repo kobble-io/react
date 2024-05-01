@@ -1,5 +1,5 @@
 import { KobbleContext } from './KobbleContext.tsx';
-import { createKobbleClient, KobbleClient } from '@kobbleio/auth-spa-js';
+import { createKobbleClient, KobbleClient } from '@kobbleio/javascript';
 import { useEffect, useState } from 'react';
 import { AuthProvider } from '../auth/AuthProvider.tsx';
 import { AccessControlProvider } from '../access-control/AccessControlProvider.tsx';

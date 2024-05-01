@@ -82,7 +82,7 @@ The package provides some hooks to access the user's authentication status and K
 
 - `useAuth()`: Returns the user's authentication status and the Kobble Client.
 - `useAuthStateChanged(callback)`: Calls the callback function when the user's authentication status changes.
-- `useKobble()`: Returns the Kobble Client instance (which uses [Kobble SPA SDK](https://npmjs.com/package/@kobbleio/auth-spa-js)).
+- `useKobble()`: Returns the Kobble Client instance (which uses [Kobble SPA SDK](https://npmjs.com/package/@kobbleio/javascript)).
 
 
 #### Examples
